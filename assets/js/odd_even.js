@@ -6,6 +6,8 @@ var inputCheck = function() {
     number = window.prompt("input any numerical value between 1 and 1000");
 }
 
+number = Math.floor(number);
+
 // check to ensure the number is between 1 and 1000
 while (number < 1 || number > 1000) {
     inputCheck();
